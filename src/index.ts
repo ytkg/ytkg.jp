@@ -7,7 +7,8 @@ app.get('/', async (c) => {
     {
       'site': 'https://takagi.dev',
       'blog': 'https://takagi.blog',
-      'github': 'https://github.com/ytkg'
+      'github': 'https://github.com/ytkg',
+      'mail': 'takagi@ytkg.jp'
     }
   )
 })
