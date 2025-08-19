@@ -4,12 +4,14 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20230518.0",
     "typescript": "^5.1.6",
+    "vitest": "^2.0.5",
     "wrangler": "4.30.0"
   },
   "private": true,
   "scripts": {
     "start": "wrangler dev",
-    "deploy": "wrangler publish"
+    "deploy": "wrangler publish",
+    "test": "vitest run"
   },
   "dependencies": {
     "hono": "^4.9.2"
