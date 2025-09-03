@@ -2,7 +2,7 @@
   "name": "ytkg.jp",
   "version": "0.0.0",
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250829.0",
+    "@cloudflare/workers-types": "^4.20250903.0",
     "typescript": "^5.1.6",
     "vitest": "^2.0.5",
     "wrangler": "4.33.1"
