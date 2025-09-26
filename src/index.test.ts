@@ -14,4 +14,22 @@ describe('GET /', () => {
       'mail': 'takagi@ytkg.jp'
     })
   })
+
+  it('should redirect to GitHub when /github is requested', async () => {
+    const res = await app.request('/github')
+    expect(res.status).toBe(302)
+    expect(res.headers.get('Location')).toBe('https://github.com/ytkg')
+  })
+
+  it('should redirect to site when /site is requested', async () => {
+    const res = await app.request('/site')
+    expect(res.status).toBe(302)
+    expect(res.headers.get('Location')).toBe('https://takagi.dev')
+  })
+
+  it('should redirect unknown path to top', async () => {
+    const res = await app.request('/unknown')
+    expect(res.status).toBe(302)
+    expect(res.headers.get('Location')).toBe('/')
+  })
 })
