@@ -11,6 +11,7 @@ describe('GET /', () => {
       'site': 'https://takagi.dev',
       'blog': 'https://takagi.blog',
       'github': 'https://github.com/ytkg',
+      'x': 'https://x.com/ytkg_',
       'mail': 'takagi@ytkg.jp'
     })
   })
